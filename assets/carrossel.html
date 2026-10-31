@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Lora;src:url(file:///usr/share/fonts/truetype/google-fonts/Lora-Bold.ttf);font-weight:700}
+@font-face{font-family:Poppins;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-Regular.ttf);font-weight:400}
+@font-face{font-family:Poppins;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-SemiBold.ttf);font-weight:600}
+@font-face{font-family:Poppins;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf);font-weight:700}
+:root{--navy:#14305A;--navy2:#0D2140;--cream:#F5F1E8;--bronze:#B07A3E;--bz:linear-gradient(135deg,#8A5A2B,#D7A766 55%,#9C6A35)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#999}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--cream);font-family:Poppins;color:var(--navy);margin-bottom:20px}
+.s.dark{background:radial-gradient(circle at 80% 10%,#1E4377,var(--navy2) 70%);color:#fff}
+.logo{position:absolute;top:56px;left:64px;width:170px}
+.dark .logo{filter:brightness(0) invert(1)}
+.count{position:absolute;top:70px;right:70px;font-weight:600;font-size:26px;letter-spacing:2px;opacity:.6}
+.tag{display:inline-block;background:var(--bz);color:#fff;font-weight:600;font-size:28px;letter-spacing:3px;text-transform:uppercase;padding:12px 28px;border-radius:40px}
+h1{font-family:Lora;font-size:104px;line-height:1.02;letter-spacing:-1px}
+h2{font-family:Lora;font-size:84px;line-height:1.05}
+.bz{background:var(--bz);-webkit-background-clip:text;color:transparent}
+p{font-size:38px;line-height:1.45}
+.pad{position:absolute;left:84px;right:84px}
+.big{font-family:Lora;font-size:250px;line-height:1;}
+.swipe{position:absolute;bottom:64px;right:84px;font-weight:600;font-size:30px;letter-spacing:1px}
+.foot{position:absolute;bottom:60px;left:84px;font-size:26px;opacity:.55}
+.mascot{position:absolute}
+.card{background:#fff;border-radius:28px;padding:34px 40px;box-shadow:0 10px 30px rgba(20,48,90,.10);display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.card .n{font-weight:600;font-size:40px}
+.card .v{font-family:Lora;font-size:58px}
+.dark .card{background:rgba(255,255,255,.08);box-shadow:none;border:2px solid rgba(215,167,102,.5)}
+.bar{width:120px;height:8px;background:var(--bz);border-radius:4px;margin:34px 0}
+</style></head><body>
+
+<!-- 1 CAPA -->
+<section class="s dark" id="s1">
+  <img class="logo" src="logo.png">
+  <div class="count">1/6</div>
+  <div class="pad" style="top:250px">
+    <span class="tag">Lançamento</span>
+    <h1 style="margin-top:44px">iPhone 18 Pro<br><span class="bz">chegou.</span></h1>
+    <p style="margin-top:36px;max-width:560px;opacity:.9">O que mudou de verdade e como trazer o seu pagando menos.</p>
+  </div>
+  <img class="mascot" src="mascote.png" style="width:560px;right:-40px;bottom:0">
+  <div class="swipe" style="left:84px;right:auto">Arrasta pro lado →</div>
+</section>
+
+<!-- 2 CHIP -->
+<section class="s" id="s2">
+  <img class="logo" src="logo.png">
+  <div class="count">2/6</div>
+  <div class="pad" style="top:300px">
+    <span class="tag">Desempenho</span>
+    <div class="big bz" style="margin-top:50px">A20 Pro</div>
+    <div class="bar"></div>
+    <p>Chip novo, fabricado em <b>2 nanômetros</b>. Na prática: mais rápido, gasta menos bateria e esquenta menos em jogo e vídeo.</p>
+  </div>
+  <div class="swipe">→</div>
+</section>
+
+<!-- 3 MEMÓRIA -->
+<section class="s" id="s3">
+  <img class="logo" src="logo.png">
+  <div class="count">3/6</div>
+  <div class="pad" style="top:300px">
+    <span class="tag">Memória</span>
+    <h2 style="margin-top:50px">Mais espaço<br>pra tudo</h2>
+    <div class="bar"></div>
+    <div class="card"><span class="n">Memória RAM</span><span class="v bz">12 GB</span></div>
+    <div class="card"><span class="n">Armazenamento</span><span class="v bz">até 1 TB</span></div>
+    <p style="margin-top:20px;font-size:34px">Mais apps abertos ao mesmo tempo e espaço de sobra pra foto e vídeo em 4K.</p>
+  </div>
+  <div class="swipe">→</div>
+</section>
+
+<!-- 4 BATERIA E CÂMERA -->
+<section class="s" id="s4">
+  <img class="logo" src="logo.png">
+  <div class="count">4/6</div>
+  <div class="pad" style="top:300px">
+    <span class="tag">Bateria e câmera</span>
+    <div class="big bz" style="margin-top:50px">45 h</div>
+    <div class="bar"></div>
+    <p>Bateria maior, com promessa de <b>até 45 horas</b> de uso.</p>
+    <p style="margin-top:26px">Câmeras aprimoradas e novos recursos de foto e vídeo.</p>
+  </div>
+  <div class="swipe">→</div>
+</section>
+
+<!-- 5 PREÇO -->
+<section class="s dark" id="s5">
+  <img class="logo" src="logo.png">
+  <div class="count">5/6</div>
+  <div class="pad" style="top:290px">
+    <span class="tag">Preço no Brasil</span>
+    <p style="margin-top:56px;opacity:.85">Nas lojas brasileiras, a partir de</p>
+    <div class="big" style="font-size:190px;margin-top:10px">R$ 11.999</div>
+    <div class="bar"></div>
+    <h2 style="font-size:72px">Quer pagar <span class="bz">menos?</span></h2>
+    <p style="margin-top:26px;opacity:.9">Compra com preço de Paraguai, com nota fiscal, e a gente entrega na sua casa.</p>
+  </div>
+  <div class="swipe">→</div>
+</section>
+
+<!-- 6 FRETE / CTA -->
+<section class="s" id="s6">
+  <img class="logo" src="logo.png">
+  <div class="count">6/6</div>
+  <div class="pad" style="top:230px">
+    <span class="tag">Frete pra todo o Brasil</span>
+    <h2 style="margin-top:44px">Do Paraguai<br>até você</h2>
+    <div class="bar"></div>
+    <div style="width:600px">
+      <div class="card"><span class="n">iPhone</span><span class="v bz">R$ 300</span></div>
+      <div class="card"><span class="n">Android</span><span class="v bz">R$ 200</span></div>
+      <div class="card"><span class="n">Outros produtos</span><span class="v" style="font-size:40px">consulte</span></div>
+    </div>
+    <p style="margin-top:30px;font-weight:600;max-width:560px">Chama no WhatsApp:<br>link na bio ↗</p>
+  </div>
+  <img class="mascot" src="mascote.png" style="width:470px;right:-30px;bottom:0">
+</section>
+</body></html>

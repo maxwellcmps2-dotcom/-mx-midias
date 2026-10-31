@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:Lora;src:url(file:///usr/share/fonts/truetype/google-fonts/Lora-Bold.ttf);font-weight:700}
+@font-face{font-family:Poppins;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-Regular.ttf);font-weight:400}
+@font-face{font-family:Poppins;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-SemiBold.ttf);font-weight:600}
+@font-face{font-family:Poppins;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf);font-weight:700}
+:root{--navy:#14305A;--navy2:#0D2140;--cream:#F5F1E8;--bronze:#B07A3E;--bz:linear-gradient(135deg,#8A5A2B,#D7A766 55%,#9C6A35)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#999}
+.s{width:1080px;height:1920px;position:relative;overflow:hidden;background:var(--cream);font-family:Poppins;color:var(--navy);margin-bottom:20px}
+.s.dark{background:radial-gradient(circle at 80% 10%,#1E4377,var(--navy2) 70%);color:#fff}
+.logo{position:absolute;top:56px;left:64px;width:170px}
+.dark .logo{filter:brightness(0) invert(1)}
+.count{position:absolute;top:70px;right:70px;font-weight:600;font-size:26px;letter-spacing:2px;opacity:.6}
+.tag{display:inline-block;background:var(--bz);color:#fff;font-weight:600;font-size:28px;letter-spacing:3px;text-transform:uppercase;padding:12px 28px;border-radius:40px}
+h1{font-family:Lora;font-size:104px;line-height:1.02;letter-spacing:-1px}
+h2{font-family:Lora;font-size:84px;line-height:1.05}
+.bz{background:var(--bz);-webkit-background-clip:text;color:transparent}
+p{font-size:38px;line-height:1.45}
+.pad{position:absolute;left:84px;right:84px}
+.big{font-family:Lora;font-size:250px;line-height:1;}
+.swipe{position:absolute;bottom:64px;right:84px;font-weight:600;font-size:30px;letter-spacing:1px}
+.foot{position:absolute;bottom:60px;left:84px;font-size:26px;opacity:.55}
+.mascot{position:absolute}
+.card{background:#fff;border-radius:28px;padding:34px 40px;box-shadow:0 10px 30px rgba(20,48,90,.10);display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.card .n{font-weight:600;font-size:40px}
+.card .v{font-family:Lora;font-size:58px}
+.dark .card{background:rgba(255,255,255,.08);box-shadow:none;border:2px solid rgba(215,167,102,.5)}
+.bar{width:120px;height:8px;background:var(--bz);border-radius:4px;margin:34px 0}
+
+.c{text-align:center;left:70px;right:70px} .logo{left:50%;transform:translateX(-50%);width:230px;top:90px}
+</style></head><body>
+<section class="s dark" id="r1"><img class="logo" src="logo.png">
+ <div class="pad c" style="top:420px"><span class="tag">Paraguai → Brasil</span>
+ <h1 style="margin-top:60px;font-size:120px">Comprar no<br>Paraguai<br><span class="bz">sem sair<br>de casa?</span></h1></div>
+ <img class="mascot" src="mascote.png" style="width:640px;left:220px;bottom:0"></section>
+<section class="s" id="r2"><img class="logo" src="logo.png">
+ <div class="pad c" style="top:560px"><span class="tag">Como funciona</span>
+ <h1 style="margin-top:60px;font-size:116px">A gente<br>compra<br><span class="bz">pra você.</span></h1>
+ <p style="margin-top:70px;font-size:50px">Com nota fiscal,<br>direto do Paraguai.</p></div></section>
+<section class="s" id="r3"><img class="logo" src="logo.png">
+ <div class="pad" style="top:430px"><div style="text-align:center"><span class="tag">Frete</span>
+ <h2 style="margin-top:50px;font-size:100px">Quanto custa<br>o envio?</h2></div><div style="height:70px"></div>
+ <div class="card" style="padding:50px 56px"><span class="n" style="font-size:54px">iPhone</span><span class="v bz" style="font-size:80px">R$ 300</span></div>
+ <div class="card" style="padding:50px 56px"><span class="n" style="font-size:54px">Android</span><span class="v bz" style="font-size:80px">R$ 200</span></div>
+ <div class="card" style="padding:50px 56px"><span class="n" style="font-size:54px">Outros produtos</span><span class="v" style="font-size:52px">consulte</span></div></div></section>
+<section class="s dark" id="r4"><img class="logo" src="logo.png">
+ <div class="pad c" style="top:400px"><h1 style="font-size:124px">Enviamos<br>pra <span class="bz">todo<br>o Brasil</span></h1>
+ <p style="margin-top:60px;font-size:54px;font-weight:600">Chama no WhatsApp<br>link na bio ↗</p></div>
+ <img class="mascot" src="mascote.png" style="width:600px;left:240px;bottom:0"></section>
+</body></html>
