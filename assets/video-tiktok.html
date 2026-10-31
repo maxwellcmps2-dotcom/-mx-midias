@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Lora;src:url(file:///usr/share/fonts/truetype/google-fonts/Lora-Bold.ttf);font-weight:700}
+@font-face{font-family:Poppins;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf);font-weight:700}
+@font-face{font-family:Poppins;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-SemiBold.ttf);font-weight:600}
+@font-face{font-family:Poppins;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-Regular.ttf);font-weight:400}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0D2140}
+:root{--bz:linear-gradient(135deg,#8A5A2B,#E2B575 50%,#9C6A35)}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Poppins;color:#fff;
+ background:radial-gradient(circle at 70% 20%,#21508E 0%,#0D2140 60%)}
+.bg-ring{position:absolute;border-radius:50%;border:3px solid rgba(226,181,117,.18)}
+.r1{width:1400px;height:1400px;left:-160px;top:260px;animation:spin 15s linear forwards}
+.r2{width:900px;height:900px;left:90px;top:510px;border-style:dashed;animation:spinb 15s linear forwards}
+@keyframes spin{to{transform:rotate(90deg)}} @keyframes spinb{to{transform:rotate(-120deg)}}
+.bz{background:var(--bz);-webkit-background-clip:text;color:transparent}
+/* faixa fixa do whatsapp */
+.wpp{position:absolute;top:70px;left:60px;right:60px;height:110px;border-radius:60px;background:#25D366;color:#fff;
+ display:flex;align-items:center;justify-content:center;gap:22px;font-weight:700;font-size:50px;box-shadow:0 10px 40px rgba(0,0,0,.35);
+ animation:wppIn .5s .1s both, pulse 1s 1s 14 both}
+.wpp svg{width:62px;height:62px}
+@keyframes wppIn{from{transform:translateY(-200px)}to{transform:none}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+.logo{position:absolute;top:215px;left:50%;width:210px;margin-left:-105px;filter:brightness(0) invert(1);opacity:.9}
+.scene{position:absolute;left:0;right:0;top:430px;bottom:360px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 80px}
+.h{font-family:Lora;font-weight:700;line-height:1.02}
+/* visibilidade de cada cena */
+.s1{animation:show 0s 0s both, hide .25s 2.9s forwards}
+.s2{animation:show2 .01s 3s both, hide .25s 5.9s forwards}
+.s3{animation:show2 .01s 6s both, hide .25s 8.9s forwards}
+.s4{animation:show2 .01s 9s both, hide .25s 11.9s forwards}
+.s5{animation:show2 .01s 12s both}
+@keyframes show{from{opacity:1}to{opacity:1}}
+@keyframes show2{from{opacity:0}to{opacity:1}}
+@keyframes hide{to{opacity:0;transform:scale(.9)}}
+.pop{animation:pop .45s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes pop{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:none}}
+.up{animation:up .5s cubic-bezier(.2,1.2,.4,1) both}
+@keyframes up{from{opacity:0;transform:translateY(120px)}to{opacity:1;transform:none}}
+.tag{display:inline-block;background:var(--bz);color:#fff;font-weight:700;font-size:40px;letter-spacing:4px;padding:14px 36px;border-radius:50px;text-transform:uppercase}
+.chip{font-family:Lora;font-size:300px;line-height:1}
+.pill{display:flex;justify-content:space-between;align-items:center;width:880px;background:rgba(255,255,255,.08);border:3px solid rgba(226,181,117,.55);border-radius:36px;padding:34px 50px;margin:16px 0;font-size:52px;font-weight:600}
+.pill b{font-family:Lora;font-size:76px}
+.mascot{position:absolute;bottom:-20px;width:520px;right:-40px}
+.m1{animation:mIn .6s .5s cubic-bezier(.2,1.3,.4,1) both, hide .25s 2.9s forwards}
+.m5{animation:mIn .6s 12.2s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes mIn{from{transform:translateX(600px) rotate(15deg)}to{transform:none}}
+.strike{position:relative;display:inline-block}
+.strike:after{content:"";position:absolute;left:-10px;right:-10px;top:50%;height:14px;background:#E5484D;border-radius:7px;transform-origin:left;animation:line .35s 10.4s both}
+@keyframes line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.flash{position:absolute;inset:0;background:#fff;pointer-events:none;opacity:0}
+.f1{animation:fl .25s 3s forwards}.f2{animation:fl .25s 6s forwards}.f3{animation:fl .25s 9s forwards}.f4{animation:fl .25s 12s forwards}
+@keyframes fl{0%{opacity:.55}100%{opacity:0}}
+.prog{position:absolute;bottom:0;left:0;height:12px;background:var(--bz);animation:prog 15s linear both}
+@keyframes prog{from{width:0}to{width:100%}}
+</style></head><body><div id="stage">
+<div class="bg-ring r1"></div><div class="bg-ring r2"></div>
+
+<div class="wpp"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2s.2-1.1.1-1.2-.2-.2-.4-.3z"/></svg>(98) 98113-1913</div>
+<img class="logo" src="../logo.png">
+
+<!-- CENA 1: gancho -->
+<div class="scene s1">
+  <div class="tag pop" style="animation-delay:.15s">Lançamento</div>
+  <div class="h pop" style="font-size:150px;margin-top:50px;animation-delay:.35s">iPhone<br>18 Pro</div>
+  <div class="h pop bz" style="font-size:130px;margin-top:10px;animation-delay:.75s">chegou 🔥</div>
+</div>
+<img class="mascot m1" src="../mascote.png">
+
+<!-- CENA 2: chip -->
+<div class="scene s2">
+  <div class="tag up" style="animation-delay:3.05s">Desempenho</div>
+  <div class="chip bz pop" style="animation-delay:3.2s;margin-top:40px">A20</div>
+  <div class="h pop" style="font-size:110px;animation-delay:3.5s">Pro</div>
+  <div class="up" style="font-size:54px;margin-top:40px;animation-delay:3.9s">feito em <b>2 nanômetros</b><br>mais rápido e esquenta menos</div>
+</div>
+
+<!-- CENA 3: specs -->
+<div class="scene s3">
+  <div class="h up" style="font-size:96px;margin-bottom:40px;animation-delay:6.05s">O que mais<br><span class="bz">mudou?</span></div>
+  <div class="pill up" style="animation-delay:6.4s">RAM <b class="bz">12 GB</b></div>
+  <div class="pill up" style="animation-delay:6.9s">Armazenamento <b class="bz">até 1 TB</b></div>
+  <div class="pill up" style="animation-delay:7.4s">Bateria <b class="bz">até 45 h</b></div>
+</div>
+
+<!-- CENA 4: preço -->
+<div class="scene s4">
+  <div class="up" style="font-size:54px;opacity:.85;animation-delay:9.05s">Nas lojas do Brasil</div>
+  <div class="h pop" style="font-size:150px;margin-top:20px;animation-delay:9.3s"><span class="strike">R$ 11.999</span></div>
+  <div class="h pop bz" style="font-size:110px;margin-top:70px;animation-delay:10.8s">Paga menos<br>importando 👇</div>
+</div>
+
+<!-- CENA 5: frete + CTA -->
+<div class="scene s5">
+  <div class="tag pop" style="animation-delay:12.05s">Frete pra todo o Brasil</div>
+  <div class="pill up" style="animation-delay:12.3s;margin-top:40px">iPhone <b class="bz">R$ 300</b></div>
+  <div class="pill up" style="animation-delay:12.6s">Android <b class="bz">R$ 200</b></div>
+  <div class="h pop" style="font-size:84px;margin-top:40px;animation-delay:13.1s">Chama no<br><span style="color:#25D366">WhatsApp</span> 👆</div>
+</div>
+<img class="mascot m5" src="../mascote.png" style="width:420px;right:-30px">
+
+<div class="flash f1"></div><div class="flash f2"></div><div class="flash f3"></div><div class="flash f4"></div>
+<div class="prog"></div>
+</div></body></html>
