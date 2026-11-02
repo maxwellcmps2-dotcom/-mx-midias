@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1920px;overflow:hidden;font-family:Poppins,'Noto Color Emoji',sans-serif;background:#12263F;position:relative}
+.scene{position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0}
+.mono{font-family:Inter,sans-serif;font-weight:600;letter-spacing:6px;text-transform:uppercase}
+#s1{background:#12263F;color:#fff}
+#s2{background:#EFEAE0}
+#s3{background:#12263F;color:#fff}
+#s4{background:#F7F7F5;color:#12263F}
+.big{font-weight:700;line-height:1.05}
+.chip{position:absolute;top:400px;height:96px;border:3px solid #12263F;background:#F7F7F5;border-radius:14px;padding:12px 18px}
+.chip .k{font-family:Inter;font-weight:600;font-size:18px;letter-spacing:3px;color:#55657A}
+.chip .v{font-weight:700;font-size:30px;color:#12263F;line-height:1.25}
+.pill{position:absolute;background:#12263F;color:#fff;font-family:Inter;font-weight:700;font-size:22px;letter-spacing:3px;padding:8px 14px;border-radius:10px;white-space:nowrap}
+.card{position:absolute;left:80px;width:880px;height:190px;background:#F7F7F5;border-radius:28px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;color:#12263F}
+.card .n{font-weight:700;font-size:46px;line-height:1.1}
+.card .p{font-weight:700;font-size:58px;color:#E8611A;white-space:nowrap}
+.card .p.s{font-size:40px}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+</style></head><body>
+
+<!-- CENA 1: gancho -->
+<div class="scene" id="s1">
+  <div id="s1logo" style="position:absolute;top:200px;left:0;width:1080px;display:flex;justify-content:center;align-items:center;gap:20px">
+    <svg width="84" height="84" viewBox="0 0 120 120"><path d="M93.7 88.3 A44 44 0 1 1 93.7 31.7" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round"/><circle cx="93.7" cy="31.7" r="12" fill="#F26B1D"/></svg>
+    <div><div style="font-weight:700;font-size:44px;line-height:1">CAMPOS</div><div class="mono" style="font-size:16px;letter-spacing:9px;color:#B8C4D4">Logística</div></div>
+  </div>
+  <div id="h1" class="big" style="position:absolute;top:640px;left:80px;width:920px;font-size:118px">Comprou no<br><span style="color:#F26B1D">Paraguai?</span></div>
+  <div id="h2" style="position:absolute;top:1020px;left:80px;width:880px;font-size:60px;font-weight:500;line-height:1.2;color:#DDE4EC">A gente leva até a sua casa. 🇵🇾 ➜ 🇧🇷</div>
+</div>
+
+<!-- CENA 2: mapa e rota -->
+<div class="scene" id="s2">
+  <div class="mono" style="position:absolute;top:150px;left:80px;font-size:22px;color:#55657A">Rota 01 · Envio Paraguai → Brasil</div>
+  <div class="big" style="position:absolute;top:196px;left:80px;font-size:92px;color:#12263F">Do Paraguai<br>até <span style="color:#E8611A">você.</span></div>
+  <div class="chip" style="left:80px;width:270px"><div class="k">PARADAS</div><div class="v" id="cnt">0/5</div></div>
+  <div class="chip" style="left:370px;width:280px"><div class="k">ORIGEM</div><div class="v">Paraguai 🇵🇾</div></div>
+  <div class="chip" style="left:670px;width:300px"><div class="k">DESTINO</div><div class="v">Todo o Brasil</div></div>
+  <svg id="map" width="1080" height="1920" viewBox="0 0 1080 1920" style="position:absolute;left:0;top:0">
+    <defs><clipPath id="cl"><rect x="40" y="530" width="1000" height="1110" rx="36"/></clipPath></defs>
+    <g clip-path="url(#cl)">
+      <rect x="40" y="530" width="1000" height="1110" fill="#F3EEE4"/>
+      <g fill="none" stroke="#E2D9C8" stroke-width="3">
+        <circle cx="300" cy="900" r="90"/><circle cx="300" cy="900" r="150"/><circle cx="300" cy="900" r="210"/>
+        <circle cx="420" cy="1300" r="70"/><circle cx="420" cy="1300" r="125"/>
+        <path d="M40 760 C260 720 420 820 620 760"/><path d="M40 1200 C200 1150 330 1250 520 1180"/><path d="M200 530 C230 760 160 1000 240 1640"/>
+      </g>
+      <polygon fill="#D3DEE7" points="470,1640 563,1425 667,1395 740,1300 790,1130 812,1015 860,880 913,740 900,690 812,655 700,620 634,605 560,575 470,530 1040,530 1040,1640"/>
+      <g fill="none" stroke="#BFCEDB" stroke-width="3">
+        <path d="M720 1500 q20 -12 40 0 t40 0"/><path d="M880 1200 q20 -12 40 0 t40 0"/><path d="M950 900 q20 -12 40 0 t40 0"/><path d="M820 560 q20 -12 40 0 t40 0"/>
+      </g>
+      <text x="300" y="1600" font-family="Inter" font-weight="600" font-size="26" letter-spacing="8" fill="#9B8F7A">PARAGUAI</text>
+      <text x="300" y="860" font-family="Inter" font-weight="600" font-size="34" letter-spacing="14" fill="#B3A68E">BRASIL</text>
+      <text x="640" y="1580" font-family="Inter" font-style="italic" font-size="22" letter-spacing="4" fill="#8DA2B5">OCEANO ATLÂNTICO</text>
+      <path d="M317 1482 L250 1380 L330 1300 L360 1420 Z" fill="none" stroke="#C9BBA2" stroke-width="3" stroke-dasharray="8 8"/>
+      <g fill="none" stroke="#F26B1D" stroke-width="9" stroke-linecap="round">
+        <path id="r1" d="M317 1482 Q430 1400 563 1405"/>
+        <path id="r2" d="M563 1405 Q520 1260 523 1109"/>
+        <path id="r3" d="M523 1109 Q680 1020 812 1002"/>
+        <path id="r4" d="M523 1109 Q560 850 634 598"/>
+        <path id="r5" d="M523 1109 Q300 850 151 621"/>
+      </g>
+      <g id="pins"></g>
+      <circle id="truck" r="18" fill="#F26B1D" stroke="#fff" stroke-width="6" cx="317" cy="1482"/>
+    </g>
+  </svg>
+  <div id="labels"></div>
+  <div id="cap" style="position:absolute;top:1675px;left:80px;font-size:44px;font-weight:700;color:#12263F;opacity:0">Enviamos para <span style="color:#E8611A">todo o Brasil.</span></div>
+</div>
+
+<!-- CENA 3: fretes -->
+<div class="scene" id="s3">
+  <div class="mono" style="position:absolute;top:240px;left:80px;font-size:24px;color:#B8C4D4">Tabela de frete</div>
+  <div class="big" style="position:absolute;top:290px;left:80px;font-size:96px">Quanto custa<br>o <span style="color:#F26B1D">frete?</span></div>
+  <div class="card" id="c1" style="top:600px"><div class="n">iPhone</div><div class="p">R$ 300</div></div>
+  <div class="card" id="c2" style="top:830px"><div class="n">Celular<br>Android</div><div class="p">R$ 200</div></div>
+  <div class="card" id="c3" style="top:1060px"><div class="n" style="font-size:38px">Perfumes, maquiagem<br>e skincare</div><div class="p s">consulte</div></div>
+  <div id="c4" style="position:absolute;top:1320px;left:80px;width:880px;font-size:44px;font-weight:500;line-height:1.3;color:#DDE4EC">📦 Envio seguro, com rapidez e confiança.</div>
+</div>
+
+<!-- CENA 4: CTA -->
+<div class="scene" id="s4">
+  <div id="lk" style="position:absolute;top:520px;left:0;width:1080px;display:flex;justify-content:center;align-items:center;gap:30px">
+    <svg width="170" height="170" viewBox="0 0 120 120"><path d="M93.7 88.3 A44 44 0 1 1 93.7 31.7" fill="none" stroke="#12263F" stroke-width="16" stroke-linecap="round"/><circle cx="93.7" cy="31.7" r="12" fill="#F26B1D"/></svg>
+    <div><div style="font-weight:700;font-size:100px;line-height:.95;letter-spacing:-2px">CAMPOS</div><div class="mono" style="font-size:28px;letter-spacing:15px;color:#55657A">Logística</div></div>
+  </div>
+  <div id="w1" style="position:absolute;top:880px;left:0;width:1080px;text-align:center;font-size:52px;font-weight:600">Chama no WhatsApp</div>
+  <div id="w2" style="position:absolute;top:980px;left:140px;width:800px;height:140px;border-radius:70px;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:66px;font-weight:700">(98) 98113-1913</div>
+  <div id="w3" style="position:absolute;top:1190px;left:0;width:1080px;text-align:center;font-size:46px;font-weight:500;color:#55657A">Enviamos para todo o Brasil 🇧🇷</div>
+</div>
+
+<div id="flash"></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const p=(t,a,b)=>cl((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3);
+const eb=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+// pinos: [x,y,nome,labelDx,labelDy,tempo]
+const PINS=[[317,1482,'CIUDAD DEL ESTE 🇵🇾',-250,40,3.6],[563,1405,'SÃO PAULO',30,10,5.5],[523,1109,'BRASÍLIA',-210,-20,6.7],[812,1002,'SALVADOR',-120,-70,7.9],[634,598,'SÃO LUÍS',30,-10,9.1],[151,621,'MANAUS',10,40,10.3]];
+const pinG=$('pins'), lab=$('labels');
+PINS.forEach((q,i)=>{
+  const g=document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.innerHTML=`<circle r="22" fill="${i==0?'#F26B1D':'#12263F'}"/><circle r="8" fill="#fff"/>`;
+  g.id='pin'+i; pinG.appendChild(g);
+  const d=document.createElement('div'); d.className='pill'; d.id='lab'+i; d.textContent=q[2];
+  d.style.left=(q[0]+q[3])+'px'; d.style.top=(q[1]+q[4]-20)+'px'; if(i==0)d.style.background='#E8611A';
+  lab.appendChild(d);
+});
+const R=[1,2,3,4,5].map(i=>$('r'+i)); const L=R.map(r=>r.getTotalLength());
+const RT=[[4.0,5.5],[5.5,6.7],[6.7,7.9],[7.9,9.1],[9.1,10.3]];
+function scene(id,a,b){const s=$(id);s.style.opacity=(t>=a&&t<b)?1:0;}
+let t=0;
+window.setT=function(T){t=T;
+  scene('s1',0,3);scene('s2',3,12);scene('s3',12,16.5);scene('s4',16.5,99);
+  // flash
+  let f=0;[3,12,16.5].forEach(x=>{const d=Math.abs(t-x);if(d<0.18)f=Math.max(f,1-d/0.18)});$('flash').style.opacity=f*0.85;
+  // cena1
+  const a=eo(p(t,0.1,0.6));$('s1logo').style.opacity=a;$('s1logo').style.transform=`translateY(${(1-a)*-30}px)`;
+  const b=eb(p(t,0.2,0.8));$('h1').style.transform=`scale(${0.6+0.4*b})`;$('h1').style.transformOrigin='left center';$('h1').style.opacity=p(t,0.2,0.45);
+  const c=eo(p(t,1.2,1.7));$('h2').style.opacity=c;$('h2').style.transform=`translateY(${(1-c)*50}px)`;
+  // cena2: rotas
+  let truck=[317,1482],done=0;
+  R.forEach((r,i)=>{const k=eo(p(t,RT[i][0],RT[i][1]));r.style.strokeDasharray=L[i];r.style.strokeDashoffset=L[i]*(1-k);
+    if(k>0&&k<1){const pt=r.getPointAtLength(L[i]*k);truck=[pt.x,pt.y];} if(k>=1){done=i+1; if(t<RT[4][1]){const pt=r.getPointAtLength(L[i]);truck=[pt.x,pt.y];}}});
+  if(t>=RT[4][1]) truck=[151,621];
+  $('truck').setAttribute('cx',truck[0]);$('truck').setAttribute('cy',truck[1]);
+  $('truck').style.opacity=(t>3.8&&t<10.6)?1:0;
+  $('cnt').textContent=done+'/5';
+  PINS.forEach((q,i)=>{const s=eb(p(t,q[5],q[5]+0.35));$('pin'+i).setAttribute('transform',`translate(${q[0]},${q[1]}) scale(${s})`);
+    const l=$('lab'+i);l.style.opacity=p(t,q[5]+0.1,q[5]+0.35);l.style.transform=`translateY(${(1-p(t,q[5]+0.1,q[5]+0.35))*14}px)`;});
+  const m=eo(p(t,10.4,10.9));$('cap').style.opacity=m;$('cap').style.transform=`translateY(${(1-m)*30}px)`;
+  // leve zoom de câmera no mapa
+  const z=1+0.05*p(t,3,12);$('map').style.transform=`scale(${z})`;$('map').style.transformOrigin='540px 1100px';
+  // cena3
+  ['c1','c2','c3','c4'].forEach((id,i)=>{const k=eo(p(t,12.3+i*0.45,12.8+i*0.45));$(id).style.opacity=k;$(id).style.transform=`translateX(${(1-k)*-160}px)`;});
+  // cena4
+  const g=eb(p(t,16.6,17.2));$('lk').style.transform=`scale(${0.7+0.3*g})`;$('lk').style.opacity=p(t,16.6,16.9);
+  const w=eo(p(t,17.2,17.6));$('w1').style.opacity=w;
+  const w2=eb(p(t,17.5,18.0));const pulse=t>18.2?1+0.035*Math.sin((t-18.2)*7):1;$('w2').style.transform=`scale(${(0.6+0.4*w2)*pulse})`;$('w2').style.opacity=p(t,17.5,17.7);
+  $('w3').style.opacity=eo(p(t,18.0,18.5));
+};
+setT(0);
+</script>
+</body></html>

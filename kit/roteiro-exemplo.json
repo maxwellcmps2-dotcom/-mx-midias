@@ -1,0 +1,7 @@
+{"velocidade":0.9,"gap":0.2,"pausa_cena":0.35,"inicio":0.4,"cauda":2.2,
+ "cenas":[
+  {"id":"s1","falas":["Você sabia que o Brasil é o quinto maior país do mundo?"]},
+  {"id":"s2","falas":["São mais de oito milhões e meio de quilômetros quadrados.","E a Campos Logística leva a sua mercadoria do Paraguai para qualquer canto dele."]},
+  {"id":"s3","falas":["Eletrônicos, perfumes, maquiagem.","Transportamos qualquer mercadoria, com segurança e rapidez."]},
+  {"id":"s4","falas":["Chama no WhatsApp e envie com a Campos Logística."]}
+ ]}
