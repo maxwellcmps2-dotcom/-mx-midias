@@ -1,0 +1,7 @@
+{"velocidade":0.9,"gap":0.2,"pausa_cena":0.35,"inicio":0.4,"cauda":2.2,
+ "cenas":[
+  {"id":"s1","falas":["Você sabia que os perfumes árabes viraram febre no Brasil?"]},
+  {"id":"s2","falas":["Numa pesquisa, setenta e sete por cento dos brasileiros disseram conhecer esses perfumes.","E a Campos Logística leva do Paraguai para todo o Brasil."]},
+  {"id":"s3","falas":["Perfumes, maquiagem, eletrônicos.","Transportamos qualquer mercadoria, com segurança e rapidez."]},
+  {"id":"s4","falas":["Chama no WhatsApp e envie com a Campos Logística."]}
+ ]}
