@@ -1,0 +1,7 @@
+{"velocidade":0.8,"gap":0.1,"pausa_cena":0.22,"inicio":0.1,"cauda":1.5,
+ "cenas":[
+  {"id":"s1","falas":["Achou sua creatina no Paraguai, mas mora longe da fronteira?"]},
+  {"id":"s2","falas":["E ela virou o suplemento mais usado do Brasil.","Mas tem um jeito fácil."]},
+  {"id":"s3","falas":["A Campos Logística envia vitaminas, suplementos e beleza do Paraguai pra todo o Brasil.","Transportamos qualquer mercadoria."]},
+  {"id":"s4","falas":["Chama no WhatsApp!"]}
+ ]}
