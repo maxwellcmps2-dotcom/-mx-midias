@@ -1,0 +1,7 @@
+{"velocidade":0.8,"gap":0.1,"pausa_cena":0.2,"inicio":0.1,"cauda":1.4,
+ "cenas":[
+  {"id":"s1","falas":["A Black Friday do Paraguai vem aí, mas você mora longe da fronteira?"]},
+  {"id":"s2","falas":["E ela é gigante: mais de trezentos mil visitantes.","Mas tem um jeito de não ficar de fora."]},
+  {"id":"s3","falas":["A Campos Logística envia sua compra do Paraguai pra todo o Brasil.","Transportamos qualquer mercadoria."]},
+  {"id":"s4","falas":["Chama no WhatsApp!"]}
+ ]}
