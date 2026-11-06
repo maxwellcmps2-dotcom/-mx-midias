@@ -1,0 +1,7 @@
+{"velocidade":0.8,"gap":0.1,"pausa_cena":0.2,"inicio":0.1,"cauda":1.4,
+ "cenas":[
+  {"id":"s1","falas":["O iPhone no Brasil está entre os mais caros do mundo."]},
+  {"id":"s2","falas":["O dezessete lançou a quase oito mil reais.","E quem compra no Paraguai… mora longe da fronteira."]},
+  {"id":"s3","falas":["A Campos Logística envia do Paraguai pra todo o Brasil.","Transportamos qualquer mercadoria."]},
+  {"id":"s4","falas":["Chama no WhatsApp!"]}
+ ]}
