@@ -1,0 +1,7 @@
+node_modules/
+frames/
+voz/
+*.wav
+package.json
+package-lock.json
+s_*.png
