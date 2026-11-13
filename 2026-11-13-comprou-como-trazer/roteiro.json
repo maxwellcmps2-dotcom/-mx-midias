@@ -1,0 +1,7 @@
+{"velocidade":0.86,"gap":0.45,"pausa_cena":0.3,"inicio":0.05,"cauda":1.2,
+ "cenas":[
+  {"id":"s1","falas":["Comprou no Paraguai… e não sabe como trazer?"]},
+  {"id":"s2","falas":["Voltar até a fronteira? Nem sempre dá…","Mas tem um jeito."]},
+  {"id":"s3","falas":["A Campos Logística leva do Paraguai pra todo o Brasil.","Transportamos qualquer mercadoria!"]},
+  {"id":"s4","falas":["Chama no WhatsApp e envie com a Campos Logística!"]}
+ ]}
