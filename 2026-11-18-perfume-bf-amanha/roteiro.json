@@ -1,0 +1,7 @@
+{"velocidade":0.86,"gap":0.3,"pausa_cena":0.25,"inicio":0.05,"cauda":1.0,
+ "cenas":[
+  {"id":"s1","falas":["Vai trazer perfume da Black Friday?"]},
+  {"id":"s2","falas":["Começa amanhã, em Ciudad del Este.","Frete de perfume? É só consultar."]},
+  {"id":"s3","falas":["A Campos Logística envia do Paraguai para todo o Brasil."]},
+  {"id":"s4","falas":["Marca quem precisa ver isso!"]}
+ ]}
