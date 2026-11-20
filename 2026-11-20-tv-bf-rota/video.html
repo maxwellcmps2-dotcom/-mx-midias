@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1920px;overflow:hidden;font-family:Poppins,'Noto Color Emoji',sans-serif;background:#12263F;position:relative}
+.sc{position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0}
+.bgimg{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,38,63,.55) 0%,rgba(18,38,63,.15) 35%,rgba(18,38,63,.35) 55%,rgba(18,38,63,.85) 100%)}
+.mono{font-family:Inter,sans-serif;font-weight:600;letter-spacing:5px;text-transform:uppercase}
+.pill{position:absolute;left:80px;top:190px;background:#F26B1D;color:#fff;border-radius:40px;padding:14px 30px;font-size:30px}
+.hook{position:absolute;left:80px;width:920px;font-weight:700;color:#fff;line-height:1.04;text-shadow:0 6px 30px rgba(0,0,0,.6)}
+.o{color:#F26B1D}
+.card{position:absolute;left:80px;width:920px;background:#F7F7F5;border-radius:32px;display:flex;align-items:center;justify-content:space-between;padding:0 56px;color:#12263F;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.card .n{font-weight:700;font-size:60px}
+.card .p{font-weight:700;font-size:80px;color:#E8611A;white-space:nowrap}
+.lab{position:absolute;background:#12263F;color:#fff;font-family:Inter;font-weight:700;font-size:24px;letter-spacing:3px;padding:8px 14px;border-radius:10px;white-space:nowrap}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+</style></head><body>
+
+<div class="sc" id="s1">
+  <img class="bgimg" id="i1" src="c1/0001.jpg">
+  <div class="shade"></div>
+  <div class="pill mono">📺 Black Friday CDE · até 22/11</div>
+  <div class="hook" id="h1" style="top:1140px;font-size:120px"><span class="w">Comprou</span> <span class="w o">TV</span><br><span class="w">no</span> <span class="w o">Paraguai?</span></div>
+</div>
+
+<div class="sc" id="s2" style="background:#EFEAE0">
+  <div id="cap2" style="position:absolute;top:170px;left:80px;width:920px;font-weight:700;font-size:80px;line-height:1.08;color:#12263F"></div>
+  <svg width="1080" height="1920" viewBox="0 0 1080 1920" style="position:absolute;left:0;top:0">
+    <defs><clipPath id="cl"><rect x="40" y="530" width="1000" height="1110" rx="36"/></clipPath></defs>
+    <g clip-path="url(#cl)">
+      <rect x="40" y="530" width="1000" height="1110" fill="#F3EEE4"/>
+      <g fill="none" stroke="#E2D9C8" stroke-width="3">
+        <circle cx="300" cy="900" r="90"/><circle cx="300" cy="900" r="150"/><circle cx="300" cy="900" r="210"/>
+        <circle cx="420" cy="1300" r="70"/><circle cx="420" cy="1300" r="125"/>
+        <path d="M40 760 C260 720 420 820 620 760"/><path d="M40 1200 C200 1150 330 1250 520 1180"/>
+      </g>
+      <polygon fill="#D3DEE7" points="470,1640 563,1425 667,1395 740,1300 790,1130 812,1015 860,880 913,740 900,690 812,655 700,620 634,605 560,575 470,530 1040,530 1040,1640"/>
+      <text x="300" y="1600" font-family="Inter" font-weight="600" font-size="26" letter-spacing="8" fill="#9B8F7A">PARAGUAI</text>
+      <text x="260" y="860" font-family="Inter" font-weight="600" font-size="34" letter-spacing="14" fill="#B3A68E">BRASIL</text>
+      <g fill="none" stroke="#F26B1D" stroke-width="9" stroke-linecap="round">
+        <path id="r1" d="M317 1482 Q430 1400 563 1405"/>
+        <path id="r2" d="M563 1405 Q520 1260 523 1109"/>
+        <path id="r3" d="M523 1109 Q680 1020 812 1002"/>
+        <path id="r4" d="M523 1109 Q560 850 634 598"/>
+        <path id="r5" d="M523 1109 Q300 850 151 621"/>
+      </g>
+      <g id="pins"></g>
+      <circle id="truck" r="18" fill="#F26B1D" stroke="#fff" stroke-width="6" cx="317" cy="1482"/>
+    </g>
+  </svg>
+  <div id="labels"></div>
+</div>
+
+<div class="sc" id="s3">
+  <img class="bgimg" id="i3" src="c3/0001.jpg">
+  <div class="shade" style="background:rgba(18,38,63,.6)"></div>
+  <div class="mono" style="position:absolute;top:200px;left:80px;font-size:28px;color:#B8C4D4">Frete do Paraguai</div>
+  <div id="t3" style="position:absolute;top:250px;left:80px;font-weight:700;font-size:120px;color:#fff;line-height:1.05">Frete de <span class="o">TV?</span></div>
+  <div class="card" id="k1" style="top:560px;height:260px"><div class="n">📺 TV</div><div class="p">consulte</div></div>
+  <div class="card" id="k2" style="top:900px;height:190px"><div class="n" style="font-size:52px">📱 iPhone</div><div class="p" style="font-size:68px">R$ 300</div></div>
+  <div class="card" id="k3" style="top:1130px;height:190px"><div class="n" style="font-size:52px">🤖 Android</div><div class="p" style="font-size:68px">R$ 200</div></div>
+  <div id="k4" style="position:absolute;top:1400px;left:80px;width:920px;font-size:46px;font-weight:600;color:#fff;text-align:center;text-shadow:0 4px 20px rgba(0,0,0,.6)">É só chamar no WhatsApp 👇</div>
+</div>
+
+<div class="sc" id="s4" style="background:radial-gradient(circle at 50% 55%,#FFFFFF 0%,#F2EFE8 70%);color:#12263F">
+  <div id="lk" style="position:absolute;top:200px;left:0;width:1080px;display:flex;justify-content:center;align-items:center;gap:22px">
+    <svg width="110" height="110" viewBox="0 0 120 120"><path d="M93.7 88.3 A44 44 0 1 1 93.7 31.7" fill="none" stroke="#12263F" stroke-width="16" stroke-linecap="round"/><circle cx="93.7" cy="31.7" r="12" fill="#F26B1D"/></svg>
+    <div><div style="font-weight:700;font-size:72px;line-height:.95;letter-spacing:-2px">CAMPOS</div><div class="mono" style="font-size:21px;letter-spacing:12px;color:#55657A">Logística</div></div>
+  </div>
+  <div id="cta" style="position:absolute;top:480px;left:80px;width:920px;font-weight:700;font-size:96px;line-height:1.12;text-align:center">
+    <span class="w" style="color:#fff;background:#F26B1D;border-radius:22px;padding:0 28px">Manda</span><br><span class="w">pra</span> <span class="w">quem</span> <span class="w">vive</span><br><span class="w">pedindo</span> <span class="w">coisa</span><br><span class="w">do</span> <span class="w o" style="color:#E8611A">Paraguai</span> 📦
+  </div>
+  <div id="w1" style="position:absolute;top:1200px;left:0;width:1080px;text-align:center;font-size:46px;font-weight:600">Chama no WhatsApp</div>
+  <div id="w2" style="position:absolute;top:1290px;left:140px;width:800px;height:140px;border-radius:70px;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:66px;font-weight:700">(98) 98113-1913</div>
+  <div id="w3" style="position:absolute;top:1480px;left:0;width:1080px;text-align:center;font-size:42px;font-weight:500;color:#55657A">Enviamos para todo o Brasil 🇧🇷</div>
+</div>
+<div id="flash"></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const p=(t,a,b)=>cl((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3);
+const eb=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const S=[0,1.334,4.189,6.144,10.29];
+const W1=[[0.05,0.371],[0.371,0.585],[0.585,0.727],[0.727,1.084]];
+const B2=[[1.334,2.202,'A Campos <span class="o">Logística</span>'],[2.202,3.031,'envia do <span class="o">Paraguai</span>'],[3.031,99,'para todo o <span class="o">Brasil</span> 🇧🇷']];
+const W4=[6.144,6.416,6.611,6.844,7.077,7.427,7.699,7.855];
+const K1=4.73,K2=5.36,K3=5.62,K4=5.9;
+const PINS=[[317,1482,'CIUDAD DEL ESTE 🇵🇾',-250,40,1.40],[563,1405,'SÃO PAULO',30,10,2.05],[523,1109,'BRASÍLIA',-210,-20,2.55],[812,1002,'SALVADOR',-120,-70,3.05],[634,598,'SÃO LUÍS',30,-10,3.45],[151,621,'MANAUS',10,40,3.85]];
+const RT=[[1.45,2.05],[2.05,2.55],[2.55,3.05],[2.95,3.45],[3.35,3.85]];
+window.cues=[{t:0.02,tipo:'impacto'},{t:S[1],tipo:'troca'},{t:1.45,tipo:'entra'},{t:2.55,tipo:'entra'},{t:3.85,tipo:'entra'},{t:S[2],tipo:'troca'},{t:K1,tipo:'impacto'},{t:K3,tipo:'entra'},{t:S[3],tipo:'troca'},{t:6.2,tipo:'logo'},{t:8.45,tipo:'cta'}];
+const pinG=$('pins'), lab=$('labels');
+PINS.forEach((q,i)=>{
+  const g=document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.innerHTML=`<circle r="22" fill="${i==0?'#F26B1D':'#12263F'}"/><circle r="8" fill="#fff"/>`; g.id='pin'+i; pinG.appendChild(g);
+  const d=document.createElement('div'); d.className='lab'; d.id='lab'+i; d.textContent=q[2];
+  d.style.left=(q[0]+q[3])+'px'; d.style.top=(q[1]+q[4]-20)+'px'; if(i==0)d.style.background='#E8611A'; lab.appendChild(d);
+});
+const R=[1,2,3,4,5].map(i=>$('r'+i)); const L=R.map(r=>r.getTotalLength());
+const ws1=[...document.querySelectorAll('#h1 .w')], ws4=[...document.querySelectorAll('#cta .w')];
+window.setT=function(t){
+  ['s1','s2','s3','s4'].forEach((id,i)=>{$(id).style.opacity=(t>=S[i]&&t<(i==3?99:S[i+1]))?1:0;});
+  let f=0;S.slice(1,4).forEach(x=>{const d=Math.abs(t-x);if(d<0.15)f=Math.max(f,1-d/0.15)});$('flash').style.opacity=f*0.75;
+  // s1
+  $('i1').src='c1/'+String(cl(Math.floor(t*30),0,44)+1).padStart(4,'0')+'.jpg';
+  const z=1.06-0.06*eo(p(t,0,0.35));$('h1').style.transform=`scale(${z})`;$('h1').style.transformOrigin='left center';
+  ws1.forEach((w,i)=>{const on=t>=W1[i][0]&&t<W1[i][1]+0.05;w.style.textShadow=on?'0 0 30px rgba(242,107,29,.95),0 6px 30px rgba(0,0,0,.6)':'0 6px 30px rgba(0,0,0,.6)';});
+  // s2
+  let b=B2.find(x=>t>=x[0]&&t<x[1])||B2[0];$('cap2').innerHTML=b[2];
+  const kb=eb(p(t,b[0],b[0]+0.18));$('cap2').style.transform=`scale(${0.88+0.12*kb})`;$('cap2').style.transformOrigin='left top';
+  let truck=[317,1482];
+  R.forEach((r,i)=>{const k=eo(p(t,RT[i][0],RT[i][1]));r.style.strokeDasharray=L[i];r.style.strokeDashoffset=L[i]*(1-k);
+    if(k>0&&k<1){const pt=r.getPointAtLength(L[i]*k);truck=[pt.x,pt.y];} if(k>=1&&i==4)truck=[151,621];});
+  $('truck').setAttribute('cx',truck[0]);$('truck').setAttribute('cy',truck[1]);
+  PINS.forEach((q,i)=>{const s=eb(p(t,q[5],q[5]+0.3));$('pin'+i).setAttribute('transform',`translate(${q[0]},${q[1]}) scale(${s})`);
+    const l=$('lab'+i);const k=p(t,q[5]+0.05,q[5]+0.3);l.style.opacity=k;l.style.transform=`translateY(${(1-k)*14}px)`;});
+  // s3
+  $('i3').src='c3/'+String(cl(Math.floor((t-S[2])*30),0,62)+1).padStart(4,'0')+'.jpg';
+  const tz=1+0.04*p(t,S[2],S[3]);$('t3').style.transform=`scale(${tz})`;$('t3').style.transformOrigin='left top';
+  [['k1',K1],['k2',K2],['k3',K3]].forEach(([id,a])=>{const k=eb(p(t,a,a+0.3));$(id).style.opacity=p(t,a,a+0.1);$(id).style.transform=`translateX(${(1-k)*240}px)`;});
+  $('k4').style.opacity=eo(p(t,K4,K4+0.25));
+  // s4
+  const g=eb(p(t,S[3],S[3]+0.4));$('lk').style.transform=`scale(${0.75+0.25*g})`;
+  ws4.forEach((w,i)=>{w.style.opacity=t>=W4[i]-0.02?1:0.18;});
+  const w=eb(p(t,8.45,8.85));const pulse=t>8.95?1+0.035*Math.sin((t-8.95)*7):1;
+  $('w2').style.transform=`scale(${(0.6+0.4*w)*pulse})`;$('w2').style.opacity=p(t,8.45,8.55);
+  $('w1').style.opacity=eo(p(t,8.35,8.65));$('w3').style.opacity=eo(p(t,8.75,9.05));
+  return Promise.all([$('i1').decode().catch(()=>{}),$('i3').decode().catch(()=>{})]);
+};
+setT(0);window.ready=true;
+</script>
+</body></html>
