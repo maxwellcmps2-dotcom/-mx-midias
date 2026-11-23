@@ -1,0 +1,7 @@
+{"velocidade":0.8,"gap":0.25,"pausa_cena":0.25,"inicio":0.05,"cauda":1.3,
+ "cenas":[
+  {"id":"s1","falas":["Quanto é o frete do iPhone?"]},
+  {"id":"s2","falas":["Do Paraguai pro Brasil: trezentos reais.","Android: duzentos."]},
+  {"id":"s3","falas":["A Campos Logística envia do Paraguai para todo o Brasil."]},
+  {"id":"s4","falas":["Marca quem precisa ver isso!"]}
+ ]}
