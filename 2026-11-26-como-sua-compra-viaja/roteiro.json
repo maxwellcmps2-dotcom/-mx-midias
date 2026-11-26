@@ -1,0 +1,7 @@
+{"velocidade":0.8,"gap":0.25,"pausa_cena":0.25,"inicio":0.05,"cauda":1.6,
+ "cenas":[
+  {"id":"s1","falas":["Como sua compra chega até você?"]},
+  {"id":"s2","falas":["Ela é embalada, despachada e segue viagem."]},
+  {"id":"s3","falas":["A Campos Logística envia do Paraguai para todo o Brasil."]},
+  {"id":"s4","falas":["Marca quem precisa ver isso!"]}
+ ]}

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1920px;overflow:hidden;font-family:Poppins,'Noto Color Emoji',sans-serif;background:#12263F;position:relative}
+.sc{position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0}
+.bgimg{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.mono{font-family:Inter,sans-serif;font-weight:600;letter-spacing:5px;text-transform:uppercase}
+.pill{position:absolute;left:80px;top:190px;background:#F26B1D;color:#fff;border-radius:40px;padding:14px 30px;font-size:30px}
+.hook{position:absolute;left:80px;width:920px;font-weight:700;color:#fff;line-height:1.06;text-shadow:0 6px 30px rgba(0,0,0,.5)}
+.o{color:#F26B1D}
+.step{position:absolute;left:80px;width:920px;height:200px;background:#F7F7F5;border-radius:32px;display:flex;align-items:center;gap:36px;padding:0 50px;color:#12263F;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.step .num{width:110px;height:110px;border-radius:55px;background:#F26B1D;color:#fff;font-weight:700;font-size:60px;display:flex;align-items:center;justify-content:center;flex:none}
+.step .n{font-weight:700;font-size:72px;white-space:nowrap}
+.cap{position:absolute;left:80px;width:920px;text-align:center;font-weight:700;line-height:1.1;color:#12263F}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+</style></head><body>
+
+<div class="sc" id="s1">
+  <img class="bgimg" id="i1" src="c1/0001.jpg">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,38,63,0) 0%,rgba(18,38,63,0) 45%,rgba(18,38,63,.88) 62%,rgba(18,38,63,.96) 100%)"></div>
+  <div class="pill mono">📦 Bastidor do envio</div>
+  <div class="hook" id="h1" style="top:1250px;font-size:90px;white-space:nowrap"><span class="w">Como</span> <span class="w">sua</span> <span class="w o">compra</span><br><span class="w">chega</span> <span class="w">até</span> <span class="w">você?</span></div>
+  <div class="mono" style="position:absolute;left:80px;top:1640px;font-size:20px;color:rgba(255,255,255,.75)">Imagem ilustrativa</div>
+</div>
+
+<div class="sc" id="s2">
+  <img class="bgimg" id="i2" src="c2/0001.jpg">
+  <div style="position:absolute;inset:0;background:rgba(18,38,63,.74)"></div>
+  <div class="mono" style="position:absolute;top:210px;left:80px;font-size:28px;color:#B8C4D4">Do Paraguai 🇵🇾 pro Brasil 🇧🇷</div>
+  <div id="t2" style="position:absolute;top:270px;left:80px;font-weight:700;font-size:96px;color:#fff;line-height:1.05">Assim ela<br><span class="o">viaja:</span></div>
+  <div class="step" id="k1" style="top:620px"><div class="num">1</div><div class="n">Embalada 📦</div></div>
+  <div class="step" id="k2" style="top:860px"><div class="num">2</div><div class="n">Despachada 🚚</div></div>
+  <div class="step" id="k3" style="top:1100px"><div class="num">3</div><div class="n">Segue viagem 🇧🇷</div></div>
+  <div id="fr" style="position:absolute;top:1380px;left:80px;width:920px;font-size:40px;font-weight:500;color:#DDE4EC;line-height:1.35">Frete: <b style="color:#fff">iPhone R$ 300</b> · <b style="color:#fff">Android R$ 200</b><br>demais itens: consulte</div>
+  <div class="mono" style="position:absolute;left:80px;top:1640px;font-size:20px;color:rgba(255,255,255,.7)">Imagem ilustrativa</div>
+</div>
+
+<div class="sc" id="s3" style="background:#EFEAE0">
+  <div class="cap" id="cap3" style="top:200px;font-size:92px"></div>
+  <svg id="map" width="1080" height="1920" viewBox="0 0 1080 1920" style="position:absolute;left:0;top:0">
+    <defs><clipPath id="cl"><rect x="40" y="530" width="1000" height="1110" rx="36"/></clipPath></defs>
+    <g clip-path="url(#cl)">
+      <rect x="40" y="530" width="1000" height="1110" fill="#F3EEE4"/>
+      <g fill="none" stroke="#E2D9C8" stroke-width="3">
+        <circle cx="300" cy="900" r="90"/><circle cx="300" cy="900" r="150"/><circle cx="300" cy="900" r="210"/>
+        <path d="M40 760 C260 720 420 820 620 760"/><path d="M40 1200 C200 1150 330 1250 520 1180"/>
+      </g>
+      <polygon fill="#D3DEE7" points="470,1640 563,1425 667,1395 740,1300 790,1130 812,1015 860,880 913,740 900,690 812,655 700,620 634,605 560,575 470,530 1040,530 1040,1640"/>
+      <text x="290" y="860" font-family="Inter" font-weight="600" font-size="34" letter-spacing="14" fill="#B3A68E">BRASIL</text>
+      <g fill="none" stroke="#F26B1D" stroke-width="10" stroke-linecap="round">
+        <path id="r1" d="M317 1482 Q430 1400 563 1405"/>
+        <path id="r2" d="M563 1405 Q520 1260 523 1109"/>
+        <path id="r3" d="M523 1109 Q680 1020 812 1002"/>
+        <path id="r4" d="M523 1109 Q560 850 634 598"/>
+        <path id="r5" d="M523 1109 Q300 850 151 621"/>
+      </g>
+      <g id="pins"></g>
+    </g>
+  </svg>
+  <div id="labels"></div>
+</div>
+
+<div class="sc" id="s4" style="background:radial-gradient(circle at 50% 55%,#FFFFFF 0%,#F2EFE8 70%);color:#12263F">
+  <div id="lk" style="position:absolute;top:220px;left:0;width:1080px;display:flex;justify-content:center;align-items:center;gap:22px">
+    <svg width="110" height="110" viewBox="0 0 120 120"><path d="M93.7 88.3 A44 44 0 1 1 93.7 31.7" fill="none" stroke="#12263F" stroke-width="16" stroke-linecap="round"/><circle cx="93.7" cy="31.7" r="12" fill="#F26B1D"/></svg>
+    <div><div style="font-weight:700;font-size:72px;line-height:.95;letter-spacing:-2px">CAMPOS</div><div class="mono" style="font-size:21px;letter-spacing:12px;color:#55657A">Logística</div></div>
+  </div>
+  <div id="cta" style="position:absolute;top:500px;left:80px;width:920px;font-weight:700;font-size:110px;line-height:1.15;text-align:center">
+    <span class="w" style="color:#fff;background:#F26B1D;border-radius:22px;padding:0 28px">Marca</span> <span class="w">quem</span><br><span class="w">precisa</span><br><span class="w">ver</span> <span class="w">isso</span> 👇
+  </div>
+  <div id="w1" style="position:absolute;top:1170px;left:0;width:1080px;text-align:center;font-size:46px;font-weight:600">Chama no WhatsApp</div>
+  <div id="w2" style="position:absolute;top:1260px;left:140px;width:800px;height:140px;border-radius:70px;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:66px;font-weight:700">(98) 98113-1913</div>
+  <div id="w3" style="position:absolute;top:1450px;left:0;width:1080px;text-align:center;font-size:42px;font-weight:500;color:#55657A">Enviamos para todo o Brasil 🇧🇷</div>
+</div>
+<div id="flash"></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const p=(t,a,b)=>cl((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3);
+const eb=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const S=[0,1.695,4.543,7.362,10.54];
+const W1=[[0.05,0.276],[0.276,0.465],[0.465,0.766],[0.766,1.03],[1.03,1.219],[1.219,1.445]];
+const K=[2.128,2.669,3.481];
+const B3=[[4.543,5.399,'A Campos <span class="o">Logística</span>'],[5.399,6.217,'envia do <span class="o">Paraguai</span>'],[6.217,7.362,'para todo o <span class="o">Brasil</span>']];
+const W4=[7.362,7.644,7.885,8.247,8.448];
+const WA=8.8;
+window.cues=[{t:0.02,tipo:'impacto'},{t:S[1],tipo:'troca'},{t:K[0],tipo:'entra'},{t:K[1],tipo:'entra'},{t:K[2],tipo:'entra'},{t:S[2],tipo:'troca'},{t:4.75,tipo:'entra'},{t:6.0,tipo:'texto'},{t:S[3],tipo:'troca'},{t:7.45,tipo:'logo'},{t:WA,tipo:'cta'}];
+const PINS=[[317,1482,'CIUDAD DEL ESTE 🇵🇾',-250,40,4.6],[563,1405,'SÃO PAULO',30,10,5.15],[523,1109,'BRASÍLIA',-210,-20,5.6],[812,1002,'SALVADOR',-120,-70,6.05],[634,598,'SÃO LUÍS',30,-10,6.5],[151,621,'MANAUS',10,40,6.9]];
+const pinG=$('pins'),lab=$('labels');
+PINS.forEach((q,i)=>{const g=document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.innerHTML=`<circle r="22" fill="${i==0?'#F26B1D':'#12263F'}"/><circle r="8" fill="#fff"/>`;g.id='pin'+i;pinG.appendChild(g);
+  const d=document.createElement('div');d.id='lab'+i;d.textContent=q[2];
+  d.style.cssText=`position:absolute;left:${q[0]+q[3]}px;top:${q[1]+q[4]-20}px;background:${i==0?'#E8611A':'#12263F'};color:#fff;font-family:Inter;font-weight:700;font-size:24px;letter-spacing:3px;padding:8px 14px;border-radius:10px;white-space:nowrap`;
+  lab.appendChild(d);});
+const R=[1,2,3,4,5].map(i=>$('r'+i)),L=R.map(r=>r.getTotalLength());
+const RT=[[4.65,5.15],[5.15,5.6],[5.6,6.05],[5.6,6.5],[5.6,6.9]];
+const ws1=[...document.querySelectorAll('#h1 .w')],ws4=[...document.querySelectorAll('#cta .w')];
+window.setT=function(t){
+  ['s1','s2','s3','s4'].forEach((id,i)=>{$(id).style.opacity=(t>=S[i]&&t<(i==3?99:S[i+1]))?1:0;});
+  let f=0;S.slice(1,4).forEach(x=>{const d=Math.abs(t-x);if(d<0.15)f=Math.max(f,1-d/0.15)});$('flash').style.opacity=f*0.75;
+  // s1
+  $('i1').src='c1/'+String(cl(Math.floor(t*30),0,65)+1).padStart(4,'0')+'.jpg';
+  const z=1.06-0.06*eo(p(t,0,0.35));$('h1').style.transform=`scale(${z})`;$('h1').style.transformOrigin='left center';
+  ws1.forEach((w,i)=>{const on=t>=W1[i][0]&&t<W1[i][1]+0.05;w.style.textShadow=on?'0 0 28px rgba(242,107,29,.95),0 6px 30px rgba(0,0,0,.5)':'';});
+  // s2
+  $('i2').src='c2/'+String(cl(Math.floor((t-S[1])*30),0,95)+1).padStart(4,'0')+'.jpg';
+  const ds=eb(p(t,S[1],S[1]+0.3));$('t2').style.opacity=p(t,S[1],S[1]+0.1);$('t2').style.transform=`scale(${0.85+0.15*ds})`;$('t2').style.transformOrigin='left top';
+  ['k1','k2','k3'].forEach((id,i)=>{const a=K[i];const k=eb(p(t,a-0.12,a+0.22));$(id).style.opacity=p(t,a-0.12,a);$(id).style.transform=`translateX(${(1-k)*260}px)`;});
+  $('fr').style.opacity=eo(p(t,3.9,4.2));
+  // s3
+  let b=B3.find(x=>t>=x[0]&&t<x[1])||B3[0];$('cap3').innerHTML=b[2];
+  const kb=eb(p(t,b[0],b[0]+0.18));$('cap3').style.transform=`scale(${0.85+0.15*kb})`;
+  R.forEach((r,i)=>{const k=eo(p(t,RT[i][0],RT[i][1]));r.style.strokeDasharray=L[i];r.style.strokeDashoffset=L[i]*(1-k);});
+  PINS.forEach((q,i)=>{const s=eb(p(t,q[5],q[5]+0.3));$('pin'+i).setAttribute('transform',`translate(${q[0]},${q[1]}) scale(${Math.max(0.001,s)})`);
+    const l=$('lab'+i);l.style.opacity=p(t,q[5]+0.05,q[5]+0.25);});
+
+  // s4
+  const g=eb(p(t,S[3],S[3]+0.4));$('lk').style.transform=`scale(${0.75+0.25*g})`;
+  ws4.forEach((w,i)=>{w.style.opacity=t>=W4[i]-0.02?1:0.18;});
+  const w=eb(p(t,WA,WA+0.4));const pulse=t>WA+0.5?1+0.035*Math.sin((t-WA-0.5)*7):1;
+  $('w2').style.transform=`scale(${(0.6+0.4*w)*pulse})`;$('w2').style.opacity=p(t,WA,WA+0.1);
+  $('w1').style.opacity=eo(p(t,WA-0.1,WA+0.2));$('w3').style.opacity=eo(p(t,WA+0.3,WA+0.6));
+  return Promise.all([$('i1').decode().catch(()=>{}),$('i2').decode().catch(()=>{})]);
+};
+setT(0);window.ready=true;
+</script>
+</body></html>
