@@ -81,14 +81,14 @@ const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
 const p=(t,a,b)=>cl((t-a)/(b-a));
 const eo=x=>1-Math.pow(1-x,3);
 const eb=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
-const S=[0,1.695,4.543,7.362,10.54];
-const W1=[[0.05,0.276],[0.276,0.465],[0.465,0.766],[0.766,1.03],[1.03,1.219],[1.219,1.445]];
-const K=[2.128,2.669,3.481];
-const B3=[[4.543,5.399,'A Campos <span class="o">Logística</span>'],[5.399,6.217,'envia do <span class="o">Paraguai</span>'],[6.217,7.362,'para todo o <span class="o">Brasil</span>']];
-const W4=[7.362,7.644,7.885,8.247,8.448];
-const WA=8.8;
-window.cues=[{t:0.02,tipo:'impacto'},{t:S[1],tipo:'troca'},{t:K[0],tipo:'entra'},{t:K[1],tipo:'entra'},{t:K[2],tipo:'entra'},{t:S[2],tipo:'troca'},{t:4.75,tipo:'entra'},{t:6.0,tipo:'texto'},{t:S[3],tipo:'troca'},{t:7.45,tipo:'logo'},{t:WA,tipo:'cta'}];
-const PINS=[[317,1482,'CIUDAD DEL ESTE 🇵🇾',-250,40,4.6],[563,1405,'SÃO PAULO',30,10,5.15],[523,1109,'BRASÍLIA',-210,-20,5.6],[812,1002,'SALVADOR',-120,-70,6.05],[634,598,'SÃO LUÍS',30,-10,6.5],[151,621,'MANAUS',10,40,6.9]];
+const S=[0, 1.87, 5.27, 8.36, 11.6];
+const W1=[[0.03, 0.292], [0.292, 0.511], [0.511, 0.86], [0.86, 1.166], [1.166, 1.384], [1.384, 1.69]];
+const K=[2.5, 3.15, 4.22];
+const B3=[[5.45,6.366,'A Campos <span class="o">Logística</span>'],[6.366,7.241,'envia do <span class="o">Paraguai</span>'],[7.241,8.36,'para todo o <span class="o">Brasil</span>']];
+const W4=[8.47, 8.812, 9.105, 9.544, 9.788];
+const WA=10.25;
+window.cues=[{t:0.02,tipo:'impacto'},{t:S[1],tipo:'troca'},{t:K[0],tipo:'entra'},{t:K[1],tipo:'entra'},{t:K[2],tipo:'entra'},{t:S[2],tipo:'troca'},{t:5.6,tipo:'entra'},{t:6.9,tipo:'texto'},{t:S[3],tipo:'troca'},{t:8.45,tipo:'logo'},{t:WA,tipo:'cta'}];
+const PINS=[[317,1482,'CIUDAD DEL ESTE 🇵🇾',-250,40,5.5],[563,1405,'SÃO PAULO',30,10,6.1],[523,1109,'BRASÍLIA',-210,-20,6.6],[812,1002,'SALVADOR',-120,-70,7.1],[634,598,'SÃO LUÍS',30,-10,7.5],[151,621,'MANAUS',10,40,7.9]];
 const pinG=$('pins'),lab=$('labels');
 PINS.forEach((q,i)=>{const g=document.createElementNS('http://www.w3.org/2000/svg','g');
   g.innerHTML=`<circle r="22" fill="${i==0?'#F26B1D':'#12263F'}"/><circle r="8" fill="#fff"/>`;g.id='pin'+i;pinG.appendChild(g);
@@ -96,7 +96,7 @@ PINS.forEach((q,i)=>{const g=document.createElementNS('http://www.w3.org/2000/sv
   d.style.cssText=`position:absolute;left:${q[0]+q[3]}px;top:${q[1]+q[4]-20}px;background:${i==0?'#E8611A':'#12263F'};color:#fff;font-family:Inter;font-weight:700;font-size:24px;letter-spacing:3px;padding:8px 14px;border-radius:10px;white-space:nowrap`;
   lab.appendChild(d);});
 const R=[1,2,3,4,5].map(i=>$('r'+i)),L=R.map(r=>r.getTotalLength());
-const RT=[[4.65,5.15],[5.15,5.6],[5.6,6.05],[5.6,6.5],[5.6,6.9]];
+const RT=[[5.55,6.1],[6.1,6.6],[6.6,7.1],[6.6,7.5],[6.6,7.9]];
 const ws1=[...document.querySelectorAll('#h1 .w')],ws4=[...document.querySelectorAll('#cta .w')];
 window.setT=function(t){
   ['s1','s2','s3','s4'].forEach((id,i)=>{$(id).style.opacity=(t>=S[i]&&t<(i==3?99:S[i+1]))?1:0;});
@@ -106,10 +106,10 @@ window.setT=function(t){
   const z=1.06-0.06*eo(p(t,0,0.35));$('h1').style.transform=`scale(${z})`;$('h1').style.transformOrigin='left center';
   ws1.forEach((w,i)=>{const on=t>=W1[i][0]&&t<W1[i][1]+0.05;w.style.textShadow=on?'0 0 28px rgba(242,107,29,.95),0 6px 30px rgba(0,0,0,.5)':'';});
   // s2
-  $('i2').src='c2/'+String(cl(Math.floor((t-S[1])*30),0,95)+1).padStart(4,'0')+'.jpg';
+  $('i2').src='c2/'+String(cl(Math.floor((t-S[1])*30),0,110)+1).padStart(4,'0')+'.jpg';
   const ds=eb(p(t,S[1],S[1]+0.3));$('t2').style.opacity=p(t,S[1],S[1]+0.1);$('t2').style.transform=`scale(${0.85+0.15*ds})`;$('t2').style.transformOrigin='left top';
   ['k1','k2','k3'].forEach((id,i)=>{const a=K[i];const k=eb(p(t,a-0.12,a+0.22));$(id).style.opacity=p(t,a-0.12,a);$(id).style.transform=`translateX(${(1-k)*260}px)`;});
-  $('fr').style.opacity=eo(p(t,3.9,4.2));
+  $('fr').style.opacity=eo(p(t,4.3,4.6));
   // s3
   let b=B3.find(x=>t>=x[0]&&t<x[1])||B3[0];$('cap3').innerHTML=b[2];
   const kb=eb(p(t,b[0],b[0]+0.18));$('cap3').style.transform=`scale(${0.85+0.15*kb})`;
